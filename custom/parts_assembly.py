@@ -1,5 +1,5 @@
 """
-@module computerparts.parts_assembly
+@module computerparts.custom.parts_assembly
 
 ai-8b (Dustin: "we should be able to track assembly feasibility
 and performance between parts"): assembly feasibility as DERIVED
@@ -21,7 +21,7 @@ lands it is its own concern (possibly its own module).
 @consumers
   - computerparts.parts_api (build payloads)
   - appstore.appstore_ai_api (buy-vs-rent join)
-  - computerparts.selftest_computerparts
+  - computerparts.computerparts_selftest
 """
 
 import json

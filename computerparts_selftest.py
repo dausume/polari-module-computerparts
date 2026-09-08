@@ -2,7 +2,7 @@
 Selftest for the computerparts module (ai-8).
 
 Run from polari-framework/:
-    python3 -m computerparts.selftest_computerparts
+    python3 -m computerparts.computerparts_selftest
 
 Stdlib-only. Pins: every price is DATED with a source; build cost
 derives from part rows (missing parts stated, oldest date
@@ -13,7 +13,7 @@ None when either side is unknown.
 
 import json
 
-from computerparts.parts_assembly import assembly_check
+from computerparts.custom.parts_assembly import assembly_check
 from computerparts.parts_basis import (
     CONDITIONS, PART_KINDS, break_even_months, build_report,
 )
